@@ -4,24 +4,43 @@
 .posts
 	+row-flex()
 	justify-content: center
+	padding: 200px 0 0
 	
-	
+	+xs(padding, 120px 0 0)
 
 
 .rightBox,
 .leftBox
 	+col()
 	+size(6)
-	margin: 80px auto
+	+size-lg(8)
+	+size-md(10)
+	+size-sm(11)
+	+size-xs(12)
+
+.centerBox
+	+col()
+	+size(12)
+	
 	
 	
 
 .post 
 	position: relative
 	margin: 0 auto 30px 0
+	
+	cursor: pointer
+	overflow: hidden
+
+
+	&:hover &__img
+		transform: scale(1.1)
+
+	
 
 	&__description
 		position: absolute
+		z-index: 100
 		top: 0
 		left: 0
 		width: 100%
@@ -29,6 +48,12 @@
 		display: flex
 		flex-direction: column
 		color: $accent
+
+		&--black
+			color: #000
+
+		&--black .post__arrow
+			border: 1px solid #000
 		
 	&__cat
 		margin: 45px 0 20px 40px
@@ -36,20 +61,29 @@
 		font-weight: bold
 		font-size: 12px
 
+		+xs(margin, 15px 0 10px 10px)
+		
+
 	&__title
 		font-size: 48px
 		font-weight: 300
 		margin: 0 0 0 40px
 
+		+xs(font-size, 20px)
+		+xs(margin, 0 0 0 10px)
+
 	&__text
 		font-size: 18px
 		margin: 0 0 0 40px
+
+		+xs(margin, 0 0 0 10px)
+		+xs(font-size, 16px)
 	
 	&__arrow
-		//display: block
-		//margin-top: auto
-		//margin-left: auto
-		margin: auto 50px 30px auto
+		position: absolute
+		right: 50px
+		bottom: 30px
+		//margin: auto 50px 30px auto
 		font-size: 25px
 		width: 50px
 		height: 50px
@@ -59,10 +93,28 @@
 		justify-content: center
 		align-items: center
 		cursor: pointer
+		overflow: hidden
+
+		+xs(bottom, 10px)
+		+xs(right, 10px)
+		+xs(width, 35px)
+		+xs(height, 35px)
+		+xs(font-size, 20px)
+
+		&::before
+			transition: .5s
+
+		&:hover::before
+			transform: translateX(50px);
+
 		
 	&__img
 		width: 100%
 		height: 100%
+		display: block
+		transition: .5s
+
+		
 
 	&__insta
 		display: block
@@ -83,3 +135,31 @@
 	&__half
 		+col()
 		+size(6)
+		+size-xs(12)
+
+
+.loader
+	flex-wrap: wrap
+	justify-content: center
+	padding: 20px 0
+	display: flex
+
+
+	&.hide
+		display: none
+	
+
+	img
+		+col()
+		width: 50px
+		height: 50px
+
+.content-js
+	flex-wrap: wrap
+	display: none
+	padding: 0
+
+	+xs(padding, 0)
+
+	&.show
+		display: flex

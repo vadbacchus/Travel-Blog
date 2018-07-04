@@ -4,29 +4,28 @@
 		<meta charset="utf-8">
 		<meta name="description" content="">
 
-		<title></title>
+		<title>Travel & Explore</title>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 			<!-- Open Graph Protocol -->
-		<meta property="og:title" content="">
-		<meta property="og:type" content="">
+		<meta property="og:title" content="Travel & Explore">
+		<meta property="og:type" content="website">
 		<meta property="og:url" content="">
-		<meta property="og:image" content="">
+		<meta property="og:image" content="img/lonely-girl.jpg">
 			
 			<!-- Favicons and Manifest config -->
-		<link rel="shortcut icon" href="img/favicon/" type="image/x-icon">
-		<link rel="apple-touch-icon" href="img/favicon/">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-180x180.png">
 		<link rel="manifest" href="manifest.json">
-		<link rel="mask-icon" href="img/favicon/" color="#">
 
 			<!-- Chrome, Firefox OS and Opera -->
-		<meta name="theme-color" content="#">
+		<meta name="theme-color" content="#fff">
 			<!-- Windows Phone -->
-		<meta name="msapplication-navbutton-color" content="#">
+		<meta name="msapplication-navbutton-color" content="#fff">
 			<!-- iOS Safari -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="#">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
@@ -36,7 +35,16 @@
 		<header id="header" class="header">
 				<div class="navbar">
 					<button class="nav-btn">&#9776;</button>
-					<form action="" class="navbar__form">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__items"><a href="#" class="nav__link">HOME</a></li>
+							<li class="nav__items"><a href="#" class="nav__link">NEWS</a></li>
+							<li class="nav__items"><a href="#" class="nav__link">BLOG</a></li>
+							<li class="nav__items"><a href="#" class="nav__link">CONTACTS</a></li>
+						</ul>
+						<button class="nav__closebtn">&#9587;</button>
+					</nav>
+					<form action="#" class="navbar__form">
 						<input type="search" class="navbar__input" maxlength="20">
 						<input type="submit" class="navbar__submit" value="Find" >
 					</form>
@@ -49,24 +57,24 @@
 		<main class="main" id="main">
 			<div class="wrapper">
 				<div class="posts">
-					<div class="rightBox">
+					<div class="leftBox leftBox--js">
 						<div class="two-posts">
-							<div class="post two-posts__half">
-								<img src="img/deer.jpg" alt="" class="post__img">
+							<div class="post two-posts__half" >
+								<img src="img/deer.jpg" alt="deer" class="post__img">
 								<div class="post__description post__description--insta">
 									<span class="cip-instagram post__insta"></span>
 								</div>
 							</div>
-							<div class="post two-posts__half">
-								<img src="img/mountain.jpg" alt="" class="post__img">
+							<div class="post two-posts__half" data-aos="flip-right">
+								<img src="img/mountain.jpg" alt="mountain" class="post__img">
 								<div class="post__description post__description--insta">
 									<span class="cip-instagram post__insta"></span>
 								</div>
 							</div>
 						</div>
 						
-						<div class="post post-full">
-							<img src="img/food ninja.jpg" alt="" class="post__img">
+						<div class="post post-full" >
+							<img src="img/food-ninja.jpg" alt="food-ninja" class="post__img">
 							<div class="post__description">
 								<p class="post__cat">eat, pray & love</p>
 								<h2 class="post__title">Food Ninja</h2>
@@ -75,9 +83,154 @@
 							</div>
 						</div>
 					</div>
+					<div class="rightBox" >
+						<div class="post post-full">
+							<img src="img/back-on-the-countyside.jpg" alt="back-on-the-countyside" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">life in the countryside</p>
+								<h2 class="post__title">Back on the countryside</h2>
+								<p class="post__text">It feels more like home, than the city,</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+						<div class="post post-full" >
+							<img src="img/travel-n-explore.jpg" alt="travel-n-explore" class="post__img" >
+							<div class="post__description">
+								<p class="post__cat">keep exploring</p>
+								<h2 class="post__title">Travel & Explore</h2>
+								<p class="post__text">I dream of travelling the stars</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="centerBox" data-aos="fade-up">
+						<div class="post post-full">
+							<img src="img/explore-the-unknown.jpg" alt="explore-the-unknown" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">explore the unknown</p>
+								<h2 class="post__title">I can see the sun shining like a diamond up high</h2>
+								<p class="post__text">The shells I find along the shore</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="centerBox">
+						<div class="post post-full">
+							<img src="img/sunset-wishes.jpg" alt="sunset-wishes" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">sunset wishes</p>
+								<h2 class="post__title">Sunset is a pretty thing</h2>
+								<p class="post__text">That fall so endlessly</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
 					<div class="leftBox">
 						<div class="post post-full">
-							<img src="img/back on the countyside.jpg" alt="" class="post__img">
+							<img src="img/hidden-gem.jpg" alt="hidden-gem" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">Hidden Gem</p>
+								<h2 class="post__title">Deserted island</h2>
+								<p class="post__text">My heart is a deserted island, lost in a big ocean</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+						<div class="post post-full">
+							<img src="img/turtle.jpg" alt="turtle" class="post__img">
+							<div class="post__description post__description--insta">
+								<span class="cip-instagram post__insta"></span>
+							</div>
+						</div>
+						<div class="post post-full">
+							<img src="img/experience-nature.jpg" alt="experience-nature" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">experience nature</p>
+								<h2 class="post__title">Learning to kayak</h2>
+								<p class="post__text">Splish splash splish splash</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="post post-full">
+							<img src="img/soul-food.jpg" alt="soul-food" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">soul food</p>
+								<h2 class="post__title">Soul food</h2>
+								<p class="post__text">Nothin' like home cookin'</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+						<div class="post post-full">
+							<img src="img/whale.jpg" alt="whale" class="post__img">
+							<div class="post__description post__description--insta">
+								<span class="cip-instagram post__insta"></span>
+							</div>
+						</div>
+						<div class="post post-full">
+							<img src="img/you-n-culture.jpg" alt="you-n-culture" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">you & culture</p>
+								<h2 class="post__title">Closer with culture</h2>
+								<p class="post__text">Two cultures worlds apart</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="centerBox">
+						<div class="post post-full">
+							<img src="img/relax-n-enjoy-life.jpg" alt="relax-n-enjoy-life" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">relax & enjoy life</p>
+								<h2 class="post__title">Take a leave from regular life</h2>
+								<p class="post__text">Go have some genuine fun</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="centerBox">
+						<div class="post post-full">
+							<img src="img/lonely-girl.jpg" alt="lonely-girl" class="post__img">
+							<div class="post__description post__description--black">
+								<p class="post__cat">Melancholy mornings</p>
+								<h2 class="post__title">The Free Mind</h2>
+								<p class="post__text">It's good time for meditation</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loader"><img src="img/loading_spinner.gif" alt="loading_spinner"></div>
+				<div class="posts content-js">
+					<div class="leftBox leftBox--js">
+						<div class="post post-full">
+							<img src="img/girl-n-rabbit.jpeg" alt="" class="post__img">
+							<div class="post__description post__description--insta">
+								<span class="cip-instagram post__insta"></span>
+							</div>
+						</div>
+						<div class="post post-full">
+							<img src="img/reading-news.jpeg" alt="reading-news" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">eat, pray & love</p>
+								<h2 class="post__title">Food Ninja</h2>
+								<p class="post__text">Everybody likes to eat.</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+						<div class="post post-full">
+							<img src="img/girl-on-a-beach.jpeg" alt="girl-on-a-beach" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">eat, pray & love</p>
+								<h2 class="post__title">Food Ninja</h2>
+								<p class="post__text">Everybody likes to eat.</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="post post-full">
+							<img src="img/back-on-the-countyside.jpg" alt="back-on-the-countyside" class="post__img">
 							<div class="post__description">
 								<p class="post__cat">life in the countryside</p>
 								<h2 class="post__title">Back on the countryside</h2>
@@ -86,11 +239,33 @@
 							</div>
 						</div>
 						<div class="post post-full">
-							<img src="img/travel-n-explore.jpg" alt="" class="post__img">
+							<img src="img/rabbit-grafitty.jpeg" alt="rabbit-grafitty" class="post__img">
 							<div class="post__description">
 								<p class="post__cat">keep exploring</p>
 								<h2 class="post__title">Travel & Explore</h2>
 								<p class="post__text">I dream of travelling the stars</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="centerBox">
+						<div class="post post-full">
+							<img src="img/man-sitting.jpeg" alt="man-sitting" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">explore the unknown</p>
+								<h2 class="post__title">I can see the sun shining like a diamond up high</h2>
+								<p class="post__text">The shells I find along the shore</p>
+								<span class="cip-right post__arrow"></span>
+							</div>
+						</div>
+					</div>
+					<div class="centerBox">
+						<div class="post post-full">
+							<img src="img/legs-of-a-couple.jpeg" alt="legs-of-a-couple" class="post__img">
+							<div class="post__description">
+								<p class="post__cat">sunset wishes</p>
+								<h2 class="post__title">Sunset is a pretty thing</h2>
+								<p class="post__text">That fall so endlessly</p>
 								<span class="cip-right post__arrow"></span>
 							</div>
 						</div>
@@ -102,7 +277,7 @@
 
 			<!-- FOOTER START -->
 		<footer class="footer" id="footer">
-			
+			<p class="copyright">Безкоштовний psd-макет від lalala</p>
 		</footer>
 			<!-- FOOTER END -->
 

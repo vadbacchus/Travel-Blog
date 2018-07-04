@@ -1,0 +1,4 @@
+
+.cip-search:before { content: '\e800'; } /* '' */
+.cip-right:before { content: '\e801'; } /* '' */
+.cip-instagram:before { content: '\f16d'; } /* '' */
